@@ -1,28 +1,11 @@
-/* 
-ORIENTAÇÃO
-
-landscape - paisagem
-portrait - retrato
-and - e
-max-width - largura máxima
-*/
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-div {
-    height: 700px;
-    width: 700px;
-    background-color: lightblue;
-}
-
-@media screen and (max-width: 600px) and (orientation: landscape) {
-    div {
-        background-color: lightcoral;
-        height: 200px;
-        width: 200px;
-    }
+.container {
+    height: calc(100vh - 200px); /* 100% da altura da viewport menos 200px */
+    width: calc((50vw + 200px) / 2); /* metade da largura da viewport mais 200px dividido por 2 */
+    background: red;
 }
