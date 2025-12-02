@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #5d5d7d;
 }
 
 .wrapper {
@@ -11,8 +13,10 @@
 }
 
 .container-left {
-    display: inline-block
+    display: inline-block;
     width: 60%;
+    margin-top: 25%;
+    padding-left: 136px; 
 }
 
 .container-right {
@@ -25,6 +29,65 @@
 
 img {
     position: relative;
-    top: 25%;
+    top: 20%;
     right: 130px;
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 80px;
+    width: 368px;
+}
+
+p {
+    font-size: 28px;
+    line-height: 48px;
+    opacity: 0.6;
+    margin: 15px 0;
+    width: 540px;
+}
+
+button {
+    width: 269px;
+    height: 62px;
+    background: #9499ea;
+    box-shadow: 0px 10px 24px rgba(148, 153, 234, 0.24);
+    cursor: pointer;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 36px;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+}
+
+button:hover { /* Ao passar o mouse sobre o botão */
+    opacity: .8;
+}
+
+button:active { /* Ao clicar no botão */
+    opacity: .05;
+}
+
+a {
+    font-size: 28px;
+    line-height: 42px;
+    margin-right: 41px;
+    cursor: pointer;
+}
+
+a:nth-child(2) { /* Segundo link */
+    opacity: 0.4;
+}
+
+a:hover { /* Ao passar o mouse sobre o link */
+    opacity: 0.4;
+}
+
+a:active { /* Ao clicar no link */
+    opacity: 0.8; 
+}
+
+header {
+    margin: 24px 0 0 57px
 }
