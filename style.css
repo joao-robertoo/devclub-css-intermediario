@@ -1,3 +1,12 @@
+/* 
+ORIENTAÇÃO
+
+landscape - paisagem
+portrait - retrato
+and - e
+max-width - largura máxima
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +19,7 @@ div {
     background-color: lightblue;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) and (orientation: landscape) {
     div {
         background-color: lightcoral;
         height: 200px;
