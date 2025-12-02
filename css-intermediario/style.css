@@ -1,0 +1,62 @@
+/* 
+
+PSEUDO CLASSES
+
+:active - quando o elemento está ativo, ou seja, está sendo pressionado/clicado.
+:visited - seleciona o link que já foi visitado.
+:hover - quando o mouse passa em cima o elemento.
+:checked - seleciona o elemento que está marcado (checkbox, radio).
+:disabled - seleciona o elemento que está desabilitado.
+:enabled - seleciona o elemento que está habilitado.
+:focus - quando o elemento está em foco (input, textarea, select).
+:read-only - seleciona o elemento que é somente leitura.
+:read-write - seleciona o elemento que pode ser editado.
+:empty - seleciona o elemento que não possui filhos (elementos ou texto).
+
+:first-child - seleciona o primeiro filho de um elemento pai.
+:first-of-type - seleciona o primeiro filho de um tipo específico dentro de um elemento pai.
+:last-child - seleciona o último filho de um elemento pai.
+:last-of-type - seleciona o último filho de um tipo específico dentro de um elemento pai.
+:nth-child(n) - seleciona o enésimo filho de um elemento pai, onde n pode ser um número, uma palavra-chave ou uma fórmula.
+:nth-of-type(n) - seleciona o enésimo filho de um tipo específico dentro de um elemento pai, onde n pode ser um número, uma palavra-chave ou uma fórmula.
+:not(selector) - seleciona todos os elementos que não correspondem ao seletor especificado.
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li:first-child { /* seleciona o primeiro filho li de um elemento pai */
+    color: red;
+}
+
+li:last-child { /* seleciona o último filho li de um elemento pai */
+    color: orange;
+}
+
+span:first-of-type { /* seleciona o primeiro span de um elemento pai */
+    color: blue;
+}
+
+p:first-of-type { /* seleciona o primeiro p de um elemento pai */
+    color: green;
+}
+
+span:last-of-type { /* seleciona o último span de um elemento pai */
+    color: purple;
+}
+
+.container :not(p) { /* seleciona todos os elementos dentro de .container que não são p */
+    color: aqua;
+}
+
+li:nth-child(2) { /* seleciona o segundo filho li de um elemento pai */
+    color: brown;
+}
+
+li:nth-last-child() { /* seleciona o segundo filho li de um elemento pai, contando de trás para frente */
+    color: pink;
+}
