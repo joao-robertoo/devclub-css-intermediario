@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,25 +11,25 @@
     <link rel="stylesheet" href="style.css">
     <title>Desafio CSS</title>
 </head>
-
 <body>
-    <section class="container-right">
-        <header>
-            <a class="link-header">Products</a>
-            <a class="link-header">Company</a>
-            <a class="link-header">Blog</a>
-            <a class="link-header">Log In </a>
-            <button class="button-header">Sign Up</button>
-        </header>
-    </section>
-    <main>
-        <img class="logo-image" src="./img/wide.png" alt="Wide-Coverage-Location">
+    <div class="wrapper">
+        <section class="container-right">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">☰</label>
+            <header>
+                <a class="link-header">Products</a>
+                <a class="link-header">Company</a>
+                <a class="link-header">Blog</a>
+                <a class="link-header">Log In </a>
+                <button class="button-header">Sign Up</button>
+            </header>
+            <img src="./img/wide.png" alt="Wide-Coverage-Location">
+        </section>
         <section class="container-left">
             <h1>Wide Coverage Location</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem commodi aperiam quae minima et voluptatum aliquam corporis magni ex quisquam, iure ratione. Quo nobis sit, labore blanditiis similique quos voluptas?</p>
             <button class="button-main">Learn More</button>
         </section>
-    </main>
+    </div>
 </body>
-
 </html>
